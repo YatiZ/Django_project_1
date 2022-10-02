@@ -1,0 +1,15 @@
+{% extends 'base.html'%}
+{% block title%}
+    <h1>Hell world!</h1>
+{% endblock%}
+{% block content%}
+{% include "header.html" %}
+    <h1>{{title|title}}</h1>
+    {% if text is None %}
+    <p>There is no challenge in this month</p>
+    {% else %}
+    <h3>{{text}}</h3>
+    {% endif %}
+{% endblock%}    
+</body>
+</html>
